@@ -1,0 +1,35 @@
+<mat-nav-list>
+    <a mat-list-item 
+    routerLink="/signup" 
+    (click)="openside()"
+    *ngIf="!isAuth"
+    >
+        <mat-icon>person_add</mat-icon>
+        <span class="icn">SignUp</span>
+    </a>
+    <a mat-list-item 
+    routerLink="/login" 
+    (click)="openside()"
+    *ngIf="!isAuth"
+    >
+        <mat-icon>person</mat-icon>
+        <span class="icn">Login</span>
+    </a>
+    <a mat-list-item 
+    routerLink="/training" 
+    (click)="openside()"
+    *ngIf="isAuth"
+    >
+        <mat-icon>self_improvement</mat-icon> 
+        <span class="icn">Training</span>
+    </a>
+    <mat-list-item>
+        <button  mat-icon-button 
+        (click)="logout()"
+        *ngIf="isAuth"
+        >
+            <mat-icon>logout</mat-icon> 
+            <span>Logout</span>
+        </button>
+    </mat-list-item>    
+</mat-nav-list>

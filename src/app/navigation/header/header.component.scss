@@ -1,0 +1,29 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-sidenav-container, mat-sidenav, mat-sidenav-content{
+    height: 100%;
+}
+mat-sidenav{
+    width: 250px;
+}
+.navi{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active{
+    color: lightgray;
+}
+
+.icn{
+    display: inline-block;
+    padding-left: 6px;
+}
